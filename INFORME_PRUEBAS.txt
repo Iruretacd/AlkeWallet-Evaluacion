@@ -1,0 +1,30 @@
+INFORME DE EJECUCIÓN DE PRUEBAS - ALKE WALLET
+=============================================
+Fecha: 24/05/2024
+Framework: JUnit 5
+Estado: Aprobado
+
+RESUMEN DE TESTS:
+-----------------
+[OK] testDeposito:
+     - Saldo inicial: 1000
+     - Acción: Depositar 500
+     - Resultado esperado: 1500
+     - Resultado obtenido: 1500
+     -> PRUEBA SUPERADA
+
+[OK] testRetiro:
+     - Saldo inicial: 1000
+     - Acción: Retirar 200
+     - Resultado esperado: 800
+     - Resultado obtenido: 800
+     -> PRUEBA SUPERADA
+
+[OK] testRetiroInsuficiente:
+     - Saldo inicial: 100
+     - Acción: Retirar 200
+     - Resultado esperado: false (rechazado)
+     - Resultado obtenido: false
+     -> PRUEBA SUPERADA
+
+Conclusión: La lógica de negocio cumple con los requerimientos de seguridad y consistencia de datos.
